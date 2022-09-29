@@ -21,15 +21,14 @@ export const NavBar = () => {
 
   return (
     <Box backgroundColor={'white'} boxShadow={'md'} paddingY={4}>
-        <Container maxWidth='container.xl' paddingX={0}>
-          <Stack direction='row' justifyContent='space-between'>
-            <Image src={logo} />
-            <Flex direction='row' alignItems='center'>
+        <Flex justifyContent='space-between'>
+            <Image src={logo} ml="5%"/>
+            <Flex direction='row' alignItems='center' mr="15%">
               <CustomButton />
 
               <Menu isOpen={isOpen}>
                 <MenuButton onMouseEnter={onOpen}
-                  onMouseLeave={onClose} >
+                  onMouseLeave={onClose} ml="2">
                   <Stack direction='row' alignItems='center' pl={4}>
                     <Image
                       borderRadius='full'
@@ -45,9 +44,8 @@ export const NavBar = () => {
                   <MenuItem><Image src={enter} mr={2} alt='icono' boxSize={4} />Ingresar/Registrarse</MenuItem>
                 </MenuList>
               </Menu>
-            </Flex>
-          </Stack>
-        </Container>
+            </Flex>   
+        </Flex>
       </Box>
   )
 }
