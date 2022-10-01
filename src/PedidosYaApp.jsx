@@ -1,7 +1,7 @@
 
 import { Stack } from '@chakra-ui/react';
 
-import { NavBar, SearchSection } from './components';
+import { BodySection, NavBar, SearchSection } from './components';
 
 
 export const PedidosYaApp = () => {
@@ -12,6 +12,8 @@ export const PedidosYaApp = () => {
       <NavBar />
 
       <SearchSection />
+      
+      <BodySection />
       
     </Stack>
   )
