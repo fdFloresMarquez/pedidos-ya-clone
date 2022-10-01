@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Image, Input, InputGroup, InputLeftElement, Stack, Text } from '@chakra-ui/react';
+import { Box, Heading, Image, Input, InputGroup, InputLeftElement, Stack, Text } from '@chakra-ui/react';
 import location from '/assets/location.png'
 
 export const SearchSection = () => {
