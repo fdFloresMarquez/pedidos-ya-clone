@@ -20,8 +20,13 @@ export const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box backgroundColor={'white'} boxShadow={'md'} paddingY={4}>
-        <Flex justifyContent='space-between'>
+    <Box 
+      backgroundColor={'white'} 
+      boxShadow={'md'}
+      paddingY={4}
+      sx={{ position: 'sticky', top: '0', zIndex: '9999'}}
+    >
+        <Flex justifyContent='space-between' >
             <Image src={logo} ml="5%"/>
             <Flex direction='row' alignItems='center' mr="15%">
               <CustomButton />
