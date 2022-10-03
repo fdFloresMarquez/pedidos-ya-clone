@@ -1,5 +1,5 @@
 import { ChevronDownIcon } from '@chakra-ui/icons';
-import { Box, Container, Flex, Image, Stack } from '@chakra-ui/react';
+import { Box, Container, Flex, Image, Link, Stack } from '@chakra-ui/react';
 import {
   Menu,
   MenuButton,
@@ -27,7 +27,11 @@ export const NavBar = () => {
       sx={{ position: 'sticky', top: '0', zIndex: '9999'}}
     >
         <Flex justifyContent='space-between' >
-            <Image src={logo} ml="5%"/>
+            
+            <Link href='/' ml="5%">
+              <Image src={logo} />
+            </Link>
+            
             <Flex direction='row' alignItems='center' mr="15%">
               <CustomButton />
 

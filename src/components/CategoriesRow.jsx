@@ -1,16 +1,18 @@
-import { Heading, Image, Stack, Text } from '@chakra-ui/react'
+import { Center, Heading, Image, Link, Stack, Text } from '@chakra-ui/react'
 
 export const CategoriesRow = ({ icon, heading, sections}) => {
 
     return (
-        <Stack direction='row' key={heading}>
-            <Image src={icon} alt='location' />
+        <Stack direction='row' alignItems='center' key={heading}>
+           
+            <Image src={icon} alt='location' mr={9}/>
+
             <Stack direction='column'>
-                <Heading as='h2' fontSize='1.2em' >Top {heading}</Heading>
-                <Text fontSize='15px' fontWeight='600' >
+                <Heading as='h2' fontSize='1em' mb={3}>Top {heading}</Heading>
+                <Text fontSize='15px' fontWeight='600'>
                     { sections.map( section => {
                         const { title, anchor } = section;
-                        return <a key={title} href={anchor}>{title}, </a>
+                        return <Link key={title} href={anchor}>{title}, </Link>
                     })}
                 </Text>
             </Stack>

@@ -5,9 +5,13 @@ import { extendTheme } from '@chakra-ui/react'
 const colors = {
   brand: {
     900: '#1a365d',
-    800: '#F9F6F4',
+    800: '#EA044E',
     700: '#2a69ac',
   },
-}
+  background: {
+    800: '#F9F6F4',
+  }
+};
+
 
 export const theme = extendTheme({ colors })

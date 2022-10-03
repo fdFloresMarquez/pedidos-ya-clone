@@ -15,7 +15,7 @@ export const ciudades = {
 };
 
 export const barrios = {
-    heading: 'Barrio',
+    heading: 'Barrios',
     icon: shield,
     sections: [
         { title: 'Palermo', anchor:'/restaurantes/buenos-aires/palermo' },

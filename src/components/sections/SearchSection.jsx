@@ -16,7 +16,7 @@ export const SearchSection = () => {
                 <Text color="white">Restaurantes, mercados, farmacias, kioscos, y mucho más.</Text>
 
                 <Stack direction="column" alignItems="start" width='60%'>
-                    <Heading color="white" fontSize='xl' mb={3}>Veamos que tenés cerca</Heading>
+                    <Heading color="white" fontSize='xl' mt='32px' mb={3}>Veamos que tenés cerca</Heading>
 
                     <InputGroup 
                         size='lg' 
