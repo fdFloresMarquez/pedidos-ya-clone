@@ -32,7 +32,7 @@ export const AppDrawer = () => {
                 mr='auto'
                 onClick={onOpen}
             >
-                <HamburgerIcon />
+                <HamburgerIcon boxSize={{ base: '16px', md:'23px'}}/>
             </Button>
 
             <Drawer
@@ -81,14 +81,16 @@ export const AppDrawer = () => {
                     </DrawerBody>
                     
                     <DrawerFooter>
-                        <Stack 
-                            direction='row'
-                            mb='4'
-                            mr='auto'
-                        >
-                                <Image src={enter} mr={1} alt='icono' boxSize={6} />
-                                <Text fontWeight='medium'>Registrarse / Iniciar Sesión</Text>
-                        </Stack>
+                        <Link mr='auto'>
+                            <Stack 
+                                direction='row'
+                                mb='4'
+                                
+                            >   
+                                    <Image src={enter} mr={1} alt='icono' boxSize={6} />
+                                    <Text fontWeight='medium'>Registrarse / Iniciar Sesión</Text>
+                            </Stack>
+                        </Link>
                     </DrawerFooter>
                 </DrawerContent>
             </Drawer>

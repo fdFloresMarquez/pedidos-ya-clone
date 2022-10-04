@@ -73,8 +73,10 @@ export const Footer = () => {
                         
                     </Stack>
 
-                    <Image src={datafiscalar} />
+                    <Image display={{ base:'none', md:'block'}} src={datafiscalar} />
                 </Flex>
+
+                <Image display={{ base:'block', md:'none'}} src={datafiscalar} mt={-3} pb={3}/>
 
             </Container>
         </Box>
