@@ -1,5 +1,5 @@
 import { Box, Center, Container, Divider, Flex, Image, Link, Stack, Text } from '@chakra-ui/react'
-import datafiscalar from '/assets/DataFiscalAr.png'
+import datafiscalar from '/assets/data_fiscal_ar.png'
 
 export const Footer = () => {
     return (
